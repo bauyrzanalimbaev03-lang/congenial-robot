@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cinema — фильмдер</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="/">CINEMA<span>★</span></a>
+    <a href="#movies">Фильмдер</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">ҮЛКЕН ЭКРАН. ЕРЕКШЕ ӘСЕР.</p>
+      <h1>Келесі оқиғаңды<br><span>кинодан тап.</span></h1>
+      <p class="intro">
+        Сүйікті фильміңді таңдап, кино әлеміне қадам бас.
+      </p>
+      <a class="button" href="#movies">Фильмдерді көру ↗</a>
+      <div class="hero-art" aria-hidden="true">C</div>
+    </section>
+
+    <section id="movies" class="catalogue">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">КИНО КАТАЛОГЫ</p>
+          <h2>Фильмдер</h2>
+        </div>
+        <label class="search">
+          <span>Фильм іздеу</span>
+          <input id="search" type="search" placeholder="Фильм атауы…">
+        </label>
+      </div>
+
+      <p id="status" role="status" aria-live="polite">
+        Фильмдер жүктелуде…
+      </p>
+      <div id="movie-list" class="movie-grid"></div>
+    </section>
+  </main>
+
+  <dialog id="details">
+    <div class="dialog-content">
+      <button id="close-details" class="close" aria-label="Жабу">✕</button>
+      <p class="eyebrow">ФИЛЬМ ТУРАЛЫ</p>
+      <h2 id="detail-title"></h2>
+      <p id="detail-info"></p>
+      <p>Сеанс және орын таңдау мүмкіндігін келесі қадамда қосамыз.</p>
+    </div>
+  </dialog>
+
+  <footer>CINEMA ★ · Кинотеатрды басқару жүйесі</footer>
+</body>
+</html>
